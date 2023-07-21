@@ -155,6 +155,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    width: 100%;
 }
 
 .hero-msg {
@@ -205,7 +206,7 @@ span {
 .box-content {
     margin-left: 1rem;
     margin-right: 1rem;
-
+    font-size: 0.9rem;
 }
 
 .box-content p {
@@ -215,7 +216,7 @@ span {
 /** Footer **/
 
 footer{
-    margin-top: 15px ;
+    margin-top: 10px;
 }
 
 .foot-panel1 {
@@ -284,8 +285,98 @@ ul a {
     padding-top: 5px;
 }
 
-@media (max-width: 768px) {
-    /* Adjust header for mobile devices */
+
+  
+/**@media (max-width: 400px) {
+    .navbar {
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+  
+    .nav-logo {
+      margin-bottom: 5px;
+    }
+  
+    .nav-search {
+        width: 100%;
+        max-width: 300px; 
+        margin: 0 auto; 
+        padding: 5px;
+      }
+
+      .panel {
+        height: 30px; 
+      }
+    
+      .panel-options p {
+        font-size: 0.7rem; 
+      }
+    
+      .panel-deals {
+        font-size: 0.8rem; 
+      }
+      
+      .hero-section {
+        height: 200px; 
+        width: 100%; 
+        background-position:bottom;
+       
+      }
+    
+      .hero-msg {
+        font-size: 0.7rem; 
+        bottom: 10px;
+        margin-bottom: 10px;
+      }
+
+      .search-select,
+      .search-icon {
+        width: 30px;
+        font-size: 0.8rem;
+      }
+    
+      .search-input {
+        font-size: 0.9rem;
+      }**/
+   
+    
+    /* Adjust shop section for even smaller screens */
+   /** .box {
+      width: 100%;
+      margin-top: 5px;
+      padding: 10px;
+      font-size: 0.4rem;
+    }
+  
+    .foot-panel2 {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .foot-panel3 {
+      height: auto;
+    }
+  
+    .foot-panel4 {
+      height: auto;
+      padding: 5px;
+      font-size: 0.5rem;
+    }
+  
+    ul {
+      margin-top: 5px;
+    }
+  
+    .logo {
+      background-size: contain;
+    }
+  }
+
+
+  @media (max-width: 500px) {
     .navbar {
       flex-direction: column;
       justify-content: center;
@@ -293,33 +384,366 @@ ul a {
     }
   
     .nav-logo {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
   
-    /* Adjust search box for mobile devices */
     .nav-search {
       width: 100%;
+      max-width: 300px; 
+      margin: 0 auto; 
+      padding: 5px;
     }
   
     .search-select,
-    .search-input,
     .search-icon {
-      border-radius: 0; /* Remove rounded corners */
+      width: 30px;
+      font-size: 0.8rem;
     }
   
-    /* Adjust hero section for mobile devices */
+    .search-input {
+      font-size: 0.9rem;
+    }
+  
+    .hero-section {
+      height: 200px;
+    }
+  
     .hero-msg {
       font-size: 0.7rem;
       bottom: 10px;
+      margin-bottom: 10px;
     }
   
-    /* Adjust shop section for mobile devices */
     .box {
       width: 100%;
+      margin-top: 5px;
+      padding: 10px;
+      font-size: 0.5rem;
     }
   
-    /* Adjust footer for mobile devices */
+    .foot-panel2 {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      .foot-panel3 {
+        height: auto;
+      }
+    
+      .foot-panel4 {
+        height: auto;
+        padding: 5px;
+        font-size: 0.5rem;
+      }
+    
+      ul {
+        margin-top: 5px;
+      }
+    
+      .logo {
+        background-size: contain;
+      }
+  }
+
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+    }
+  
+    .nav-logo {
+      margin-bottom: 5px;
+    }
+  
+    .nav-search {
+      width: 100%;
+      max-width: 400px; 
+      margin: 0 auto; 
+      padding: 5px;
+    }
+  
+    .search-select,
+    .search-icon {
+      width: 40px;
+      font-size: 0.9rem;
+    }
+  
+    .search-input {
+      font-size: 1rem;
+    }
+  
+    .hero-section {
+      height: 250px;
+    }
+  
+    .hero-msg {
+      font-size: 0.8rem;
+      bottom: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .box {
+      width: 100%;
+      margin-top: 10px;
+      padding: 15px;
+    }
+  
     .foot-panel2 {
       flex-direction: column;
+      height: auto;
+    }
+  
+    .foot-panel3 {
+      height: auto;
+    }
+  
+    .foot-panel4 {
+      height: auto;
+      padding: 10px;
+      font-size: 0.6rem;
+    }
+  
+    ul {
+      margin-top: 10px;
+    }
+  
+    .logo {
+      background-size: contain;
     }
   }
+
+  @media (max-width: 700px) {
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+    }
+  
+    .nav-logo {
+      margin-bottom: 5px;
+    }
+  
+    .nav-search {
+      width: 100%;
+      max-width: 500px; 
+      margin: 0 auto;
+      padding: 5px;
+    }
+  
+    .search-select,
+    .search-icon {
+      width: 50px;
+      font-size: 1rem;
+    }
+  
+    .search-input {
+      font-size: 1.1rem;
+    }
+  
+    .hero-section {
+      height: 300px;
+    }
+  
+    .hero-msg {
+      font-size: 0.9rem;
+      bottom: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .box {
+      width: 100%;
+      margin-top: 15px;
+      padding: 20px;
+    }
+  
+    .foot-panel2 {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .foot-panel3 {
+      height: auto;
+    }
+  
+    .foot-panel4 {
+      height: auto;
+      padding: 15px;
+      font-size: 0.7rem;
+    }
+  
+    ul {
+      margin-top: 15px;
+    }
+  
+    .logo {
+      background-size: contain;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+    }
+  
+    .nav-logo {
+      margin-bottom: 5px;
+    }
+  
+    .nav-search {
+      width: 100%;
+      max-width: 600px; 
+      margin: 0 auto;
+      padding: 5px;
+    }
+  
+    .search-select,
+    .search-icon {
+      width: 60px;
+      font-size: 1.1rem;
+    }
+  
+    .search-input {
+      font-size: 1.2rem;
+    }
+  
+    .hero-section {
+      height: 350px;
+    }
+  
+    .hero-msg {
+      font-size: 1rem;
+      bottom: 25px;
+      margin-bottom: 25px;
+    }
+  
+    .box {
+      width: 100%;
+      margin-top: 20px;
+      padding: 25px;
+    }
+  
+
+    .foot-panel2 {
+      flex-direction: column;
+      height: auto;
+
+    }
+  
+    .foot-panel3 {
+      height: auto;
+    }
+  
+    .foot-panel4 {
+      height: auto;
+      padding: 20px;
+      font-size: 0.8rem;
+    }
+  
+    ul {
+      margin-top: 20px;
+    }
+  
+    .logo {
+      background-size: contain;
+    }
+  }**/
+
+
+  /* Responsive for Mobile Devices */
+  @media (max-width: 400px) {
+    .navbar {
+        height: auto;
+      }
+
+      .nav-logo {
+        margin-bottom: 10px;
+      }
+      .add-first {
+        color: #CCCCCC ;
+        font-size: 0.6rem;
+        margin-left: 6px;
+    
+    }
+    .add-sec {
+        font-size: 0.8rem;
+        margin-left: 1px;
+    }
+    .add-icon {
+        display: flex;
+        align-items: center;
+    }
+
+
+      .nav-search {
+        width: 100%;
+        height: 28px;
+        border-radius: 4px;
+        margin-left: 2px;
+      }
+
+      .search-select,
+      .search-input,
+      .search-icon {
+        border-radius: 0;
+        font-size: 0.45rem;
+      }
+      span {
+        font-size: 0.37rem;
+    }
+      .nav-sec {
+        font-size: 0.6rem;
+        font-weight: 300;
+    }
+    .nav-cart i{
+        font-size: 15px;
+    }
+    
+    .nav-cart{
+        font-size: 0.55rem;
+        font-weight: 500;
+    }
+
+      .hero-section {
+        height: 200px;
+      }
+
+      .hero-msg {
+        font-size: 0.7rem;
+        bottom: 10px;
+        margin-bottom: 10px;
+      }
+
+      .box {
+        width: 100%;
+        margin-top: 20px;
+        padding: 25px;
+      }
+    
+  
+      .foot-panel2 {
+        flex-direction: column;
+        height: auto;
+  
+      }
+    
+      .foot-panel3 {
+        height: auto;
+      }
+    
+      .foot-panel4 {
+        height: auto;
+        padding: 20px;
+        font-size: 0.8rem;
+      }
+    
+      ul {
+        margin-top: 20px;
+      }
+    
+      
+    
+}
+  
