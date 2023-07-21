@@ -1,7 +1,7 @@
 *{
     margin: 0;
     font-family: Arial;
-    border: border-box;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -284,3 +284,42 @@ ul a {
     padding-top: 5px;
 }
 
+@media (max-width: 768px) {
+    /* Adjust header for mobile devices */
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+    }
+  
+    .nav-logo {
+      margin-bottom: 10px;
+    }
+  
+    /* Adjust search box for mobile devices */
+    .nav-search {
+      width: 100%;
+    }
+  
+    .search-select,
+    .search-input,
+    .search-icon {
+      border-radius: 0; /* Remove rounded corners */
+    }
+  
+    /* Adjust hero section for mobile devices */
+    .hero-msg {
+      font-size: 0.7rem;
+      bottom: 10px;
+    }
+  
+    /* Adjust shop section for mobile devices */
+    .box {
+      width: 100%;
+    }
+  
+    /* Adjust footer for mobile devices */
+    .foot-panel2 {
+      flex-direction: column;
+    }
+  }
